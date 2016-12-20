@@ -1,0 +1,174 @@
+{% extends "/layouts/base.twig" %}
+{% block content %}
+    {% include "/elements/header.twig" %}
+
+    <!-- ページコンテンツ -->
+    <article id="page-wrapper">
+
+        <!-- FV -->
+        <header id="canvas-container">
+            <div class="parallax-picture">
+                <div class="bg-granim-blue top_pic">
+                    <article id="recommend-pic" class="parallax-pic_inner recruit_inner">
+                        <h1>２０代限定<br>就職・転職コース</h1>
+                        <svg class="editorial" viewBox="0 24 150 28" preserveAspectRatio="none">
+                            <defs>
+                                <path id="gentle-wave" d="m -160,44.4 c 30,0 58,-18 87.7,-18 30.3,0 58.3,18 87.3,18 30,0 58,-18 88,-18 30,0 58,18 88,18 l 0,34.5 -351,0 z"/>
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="50" y="0" fill="#fff"/>
+                            </g>
+                        </svg>
+                    </article>
+                </div>
+            </div>
+        </header>
+        <!-- ./FV -->
+
+        <!-- コンテンツ -->
+        <section class="   recruit">
+            <div class="container">
+                <hr class="style-hr">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>就職・転職コース概要</h2>
+
+                        <!-- 各卒業年毎の入口 -->
+                        <div id="recruit__entrance">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4">
+                                    <figure class="recruit__snip">
+                                        <img
+                                            class="img-responsive"
+                                            src="http://i-b-c.jp/wp-content/themes/it-bootcamp/dist/img/xcatch-recruit-01.jpg.pagespeed.ic.Epu0XnwJuP.webp"
+                                            alt="17卒の方はこちら"
+                                            pagespeed_url_hash="4046416908"
+                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                                            width="600"
+                                            height="400">
+                                        <a href="http://i-b-c.jp/recruit/recruit-child-1/">
+                                            <figcaption>
+                                                <h3>17卒の方はこちら</h3>
+                                            </figcaption>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <figure class="recruit__snip">
+                                        <img
+                                            class="img-responsive"
+                                            src="http://i-b-c.jp/wp-content/themes/it-bootcamp/dist/img/xcatch-recruit-02.jpg.pagespeed.ic.CBU6JkTYaZ.webp"
+                                            alt="18卒の方はこちら"
+                                            pagespeed_url_hash="45949533"
+                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                                            width="600"
+                                            height="400">
+                                        <a href="http://i-b-c.jp/recruit/recruit-child-2/">
+                                            <figcaption>
+                                                <h3>18卒の方はこちら</h3>
+                                            </figcaption>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <figure class="recruit__snip">
+                                        <img
+                                            class="img-responsive"
+                                            src="http://i-b-c.jp/wp-content/themes/it-bootcamp/dist/img/xcatch-recruit-03.jpg.pagespeed.ic.8XwNQlgNGX.webp"
+                                            alt="既卒の方はこちら"
+                                            pagespeed_url_hash="340449454"
+                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                                            width="600"
+                                            height="400">
+                                        <a href="http://i-b-c.jp/recruit/recruit-child-3/">
+                                            <figcaption>
+                                                <h3>既卒の方はこちら</h3>
+                                            </figcaption>
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./各卒業年毎の入口 -->
+
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 col-sm-12">
+                                <!-- 就職・転職とは -->
+                                <div class="recruit-feed">
+                                    <h2 class="style-2">就職・転職コースとは？</h2>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="recruit_box">
+                                                <div class="recruit_box__inner">
+                                                    <p class="recruit_box__icon">
+                                                        <img src={{asset('/img/icon-recruit__free.png')}} alt="完全無料" pagespeed_url_hash="3623561832" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="108" height="108">
+                                                    </p>
+                                                    <h4>受講料、完全無料</h4>
+                                                    <p>
+                                                        <span class="strong">最大2つのカリキュラム</span>を無料で受講いただけます。<br>
+                                                        <small>※教材費や就職サポート費などのその他の費用は一切発生しません。</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="style-hr visible-xs">
+
+                                        <div class="col-sm-4">
+                                            <div class="recruit_box">
+                                                <div class="recruit_box__inner">
+                                                    <p class="recruit_box__icon">
+                                                        <img src={{asset('/img/icon-recruit__job.png')}} alt="就職・転職" pagespeed_url_hash="193683771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="108" height="108">
+                                                    </p>
+                                                    <h4>就職・転職にコミット</h4>
+                                                    <p>専属のキャリアアドバイザーがあなたの就職活動を完全サポートします。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="style-hr visible-xs">
+
+                                        <div class="col-sm-4">
+                                            <div class="recruit_box">
+                                                <div class="recruit_box__inner">
+                                                    <p class="recruit_box__icon">
+                                                        <img src={{asset('/img/icon-recruit__building.png')}} alt="就職先" pagespeed_url_hash="653324488" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="108" height="108">
+                                                    </p>
+                                                    <h4>就職先は3,000社</h4>
+                                                    <p>様々な企業からあなたに合った企業をご紹介します。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./就職・転職とは -->
+                                <!-- なぜ無料なのか -->
+                                <h3>なぜ完全無料なのか？</h3>
+                                <p class="lead">私たちは、企業様からお金をいただいております。</p>
+                                <div class="row">
+                                    <div class="col-md-3 hidden-sm hidden-xs">
+                                        <img src={{asset('/img/recruit_support.png')}} class="img-responsive" alt="サポートイメージ" pagespeed_url_hash="896414402" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="650" height="450">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <p>現在、IT業界は慢性的な人材不足に悩まされています。IT企業の採用意欲は非常に高く、採用に対して多額の費用を投資しています。 私たちは一人でも多くのIT人材を育成し、世の中に輩出していくことをミッションとしているため、IT人材になりたいより多くの人をサポートできると信じています。</p>
+                                    </div>
+                                </div>
+                                <!-- ./なぜ無料なのか -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+                <hr>
+                <p>
+                    LINE@ LINE@では卒業後のお仕事や島のシェアハウスの風景など非公開情報を公開します！
+                </p>
+
+                {% include "/elements/contact_link.twig" %}
+            </div>
+            <!--/container-->
+        </section>
+        <!-- ./コンテンツ -->
+
+    </article>
+    <!-- ./ページコンテンツ -->
+
+{% endblock %}

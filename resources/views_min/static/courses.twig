@@ -1,0 +1,251 @@
+{% extends "/layouts/base.twig" %}
+{% block content %}
+    {% include "/elements/header.twig" %}
+
+    <!-- FV -->
+    <header id="canvas-container">
+        <div class="parallax-picture   all-bg">
+            <div class="top_pic">
+                <article id="recommend-pic" class="parallax-pic_inner">
+                    <h1>単科</h1>
+                    <svg class="editorial" viewBox="0 24 150 28" preserveAspectRatio="none">
+                        <defs>
+                            <path id="gentle-wave" d="m -160,44.4 c 30,0 58,-18 87.7,-18 30.3,0 58.3,18 87.3,18 30,0 58,-18 88,-18 30,0 58,18 88,18 l 0,34.5 -351,0 z"/>
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="50" y="0" fill="#fff"/>
+                        </g>
+                    </svg>
+                </article>
+            </div>
+        </div>
+    </header>
+    <!-- ./FV -->
+
+    <!-- 固定ページテンプレート -->
+    <article id="page-wrapper">
+        <!-- Page Content -->
+        <div class="container">
+            <hr class="style-hr">
+     <div class="row">
+            <!-- Content -->
+            <div class="col-md-9 page-style">
+            <!-- 固定ページテンプレート -->
+            <section class="page-content">
+
+                <!-- pタグ自動挿入制御 -->
+                <div id="course-container">
+                    <h2>各コース単科</h2>
+                    <!-- Webデザイン -->
+                    <div class="course-summary-card row row-gap-medium">
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                                    <img src={{asset('/img/icon-webdesign.png')}} class="img-responsive center-block" pagespeed_url_hash="1532680324" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="1200" height="630">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="h-slim">Webデザイン
+                                        <span class="badges">
+                                            <!-- バッジエリア -->
+                                            <span class="badge badge-squared badge-recommend text-uppercase">人気</span>
+                                            <!-- ./バッジエリア -->
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="course-summary-card__content">
+                                <p>PC・タブレット・スマートフォンに最適化された「レスポンシブルサイト」を作成する為のスキルを学習します。</p>
+                            </div>
+                            <h4>価格：<span class="strong">98,000円</span>
+                            </h4>
+                            <a href="http://i-b-c.jp/wp-content/uploads/download_pdf/wd-wp_document.pdf" class="btn_dl" download="wd-wp_document.pdf">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                資料ダウンロード</a>
+                        </div>
+                    </div>
+                    <hr class="style-hr"/>
+                    <!-- ./Webデザイン -->
+
+                    <!-- WordPress -->
+                    <div class="course-summary-card row row-gap-medium">
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                                    <img src={{asset('/img/icon-wp.png')}} class="img-responsive center-block" pagespeed_url_hash="571289337" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="1200" height="630">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="h-slim">WordPress
+                                        <span class="badges">
+                                            <!-- バッジエリア -->
+                                            <!-- ./バッジエリア -->
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="course-summary-card__content">
+                                <p>ブログや更新機能を持ったWebサイトを作る為のスキルを学習します。</p>
+                            </div>
+                            <h4>価格：<span class="strong">98,000円</span>
+                            </h4>
+                            <a href="http://i-b-c.jp/wp-content/uploads/download_pdf/wd-wp_document.pdf" class="btn_dl" download="wd-wp_document.pdf">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                資料ダウンロード</a>
+                        </div>
+                    </div>
+                    <hr class="style-hr"/>
+                    <!-- ./Wordpress -->
+
+                    <!-- グラフィック -->
+                    <div class="course-summary-card row row-gap-medium">
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                                    <img src={{asset('/img/icon-graphic.png')}} class="img-responsive center-block" pagespeed_url_hash="1205191618" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="1200" height="630">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="h-slim">グラフィック
+                                        <span class="badges">
+                                            <!-- バッジエリア -->
+                                            <span class="badge badge-squared badge-new text-uppercase">NEW</span>
+                                            <!-- ./バッジエリア -->
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="course-summary-card__content">
+                                <p>IllustratorとPhotoshopの使い方と、素人でもプロのようなデザインをする為のセオリーを学習します。</p>
+                            </div>
+                            <h4>価格：<span class="strong">98,000円</span>
+                            </h4>
+                            <a href="http://i-b-c.jp/wp-content/uploads/download_pdf/graphic_document.pdf" class="btn_dl" download="graphic_document.pdf">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                資料ダウンロード</a>
+                        </div>
+                    </div>
+                    <hr class="style-hr"/>
+                    <!-- ./グラフィック -->
+
+                    <!-- マーケティング -->
+                    <div class="course-summary-card row row-gap-medium">
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                                    <img src={{asset('/img/icon-mbc.png')}} class="img-responsive center-block" pagespeed_url_hash="906500484" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="1200" height="630">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="h-slim">マーケティング
+                                        <span class="badges">
+                                            <!-- バッジエリア -->
+                                            <!-- ./バッジエリア -->
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="course-summary-card__content">
+                                <p>デジタル広告を活用して、商品を設計したり広告の運用ができる。WEB解析士、AdWords認定試験、Yahoo!プロモーション広告プロフェッショナル認定試験などを目指せます。</p>
+                            </div>
+                            <h4>価格：<span class="strong">98,000円</span>
+                            </h4>
+                            <a href="http://i-b-c.jp/wp-content/uploads/2016/10/marketing_document_user.pdf" class="btn_dl" download="marketing_document.pdf">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                資料ダウンロード</a>
+                        </div>
+                    </div>
+                    <hr class="style-hr"/>
+                    <!-- ./マーケティング -->
+
+                    <!-- Ruby -->
+                    <div class="course-summary-card row row-gap-medium">
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                                    <img src={{asset('/img/icon-ruby.png')}} class="img-responsive center-block" pagespeed_url_hash="2223769150" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="1200" height="630">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="h-slim">Ruby
+                                        <span class="badges">
+                                            <!-- バッジエリア -->
+                                            <!-- ./バッジエリア -->
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="course-summary-card__content">
+                                <p>WEBアプリケーションの大規模な開発に関われるようになる。Rails技術者認定ブロンズ試験を目指せます。</p>
+                            </div>
+                            <h4>価格：<span class="strong">98,000円</span>
+                            </h4>
+                            <a href="http://i-b-c.jp/wp-content/uploads/download_pdf/ruby_document.pdf" class="btn_dl" download="ruby_document.pdf">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                資料ダウンロード</a>
+                        </div>
+                    </div>
+                    <hr class="style-hr"/>
+                    <!-- ./Ruby -->
+
+                    <!-- JAVA -->
+                    <div class="course-summary-card row row-gap-medium">
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                                    <img src={{asset('/img/icon-java.png')}} class="img-responsive center-block" pagespeed_url_hash="2893456982" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="h-slim">JAVA
+                                        <span class="badges">
+                                            <!-- バッジエリア -->
+                                            <span class="badge badge-squared badge-new text-uppercase">NEW</span>
+                                            <span class="badge badge-squared badge-soon text-uppercase">COMMING SOON</span>
+                                            <!-- ./バッジエリア -->
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="course-summary-card__content">
+                                <p>オブジェクト指向プログラミングを用いて実行コードやテストコードなどが書けるようになります。国際資格である&#8221;Silver資格&#8221; 取得を目指します。</p>
+                            </div>
+                            <h4>価格：<span class="strong">98,000円</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- ./JAVA -->
+                </div>
+              </div>
+              <div class="col-md-3">
+                {% include "/elements/sidebar.twig" %}
+              </div>
+            </div>
+                <hr>
+                <p>
+                    LINE@ LINE@では卒業後のお仕事や島のシェアハウスの風景など非公開情報を公開します！
+                </p>
+
+                {% include "/elements/contact_link.twig" %}
+            </section>
+        </div>
+    </article>
+{% endblock %}

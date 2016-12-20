@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+  <meta charset=utf-8>
+  {% if meta_description |length > 0 %}
+  <meta name=description content={{meta_description}}>
+  {% else %}
+  <meta name=description content=「即戦力になるエンジニア」「実力のあるフリーランス」を育成。通常のスクールなら約半年かけるカリュキュラムを凝縮させた短期集中プログラム>
+  {% endif %}
+  <meta name=keywords content=石垣島,新潟,it,bootcamp,ブートキャンプ,ibc,itブートキャンプ,itbootcamp>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  {% if meta_title |length > 0 %}
+  <title>
+    {{meta_title}}
+  </title>
+  {% else %}
+  <title>
+    ITブートキャンプ | 通常のスクールなら約半年かけるカリュキュラムを凝縮させた短期集中プログラム
+  </title>
+  {% endif %}
+  <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+  <meta http-equiv=Pragma content=no-cache>
+  <meta http-equiv=Cache-Control content=no-cache>
+  <meta name=viewport content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <meta name=format-detection content="telephone=no, address=no, email=no">
+  <link rel=apple-touch-icon sizes=180x180 href="{{ asset('img/apple-touch-icon.png') }}">
+  <link rel=icon type=image/png href="{{ asset('img/favicon-32x32.png') }}" sizes=32x32>
+  <link rel=icon type=image/png href="{{ asset('img/favicon-16x16.png') }}" sizes=16x16>
+  <link rel=manifest href="{{ asset('img/manifest.json') }}">
+  <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
+  <meta name=apple-mobile-web-app-title content=ITブートキャンプ>
+  <meta name=application-name content=ITブートキャンプ>
+  <meta name=msapplication-config content="{{ asset('img/browserconfig.xml') }}">
+  <meta name=theme-color content=#ffffff>
+  <link rel=stylesheet href="{{ asset('css/lib/third-party/bootstrap/3.3.6/bootstrap.min.css') }}">
+  <link rel=stylesheet href="{{ asset('css/lib/third-party/bootstrap/3.3.6/bootstrap-theme.min.css') }}">
+  <script src=https://use.fontawesome.com/340738367c.js>
+  </script>
+  <link rel=stylesheet href="{{ asset('css/min/common.min.css') }}">
+  <link rel=stylesheet href="{{ asset('css/min/all.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/min/style.min.css') }}">
+  {% include "/elements/og.twig" %}
+</head>
+<body>
+  <main>
+    {% include "/elements/tag.twig" %}
+    {% block content %}
+    {% endblock %}
+    {% include "/elements/footer.twig" %}
+    {% include "/elements/modal.twig" %}
+    {% include "/elements/notification.twig" %}
+  </main>
+  <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js>
+  </script>
+  <script src="{{ asset('js/pc/min/main.min.js') }}">
+  </script>
+  <script src="{{ asset('js/pc/min/all.min.js') }}">
+  </script>
+  <script src="{{ asset('js/pc/min/script.min.js') }}">
+  </script>
+</body>
+</html>

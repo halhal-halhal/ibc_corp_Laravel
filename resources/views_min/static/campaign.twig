@@ -1,0 +1,109 @@
+{% extends "/layouts/base.twig" %}
+{% block content %}
+    {% include "/elements/header.twig" %}
+    <!-- FV -->
+    <header id="canvas-container">
+        <div class="parallax-picture all-bg">
+            <div class="top_pic">
+                <article id="recommend-pic" class="parallax-pic_inner">
+                    <h1>キャンペーン</h1>
+                    <svg class="editorial" viewBox="0 24 150 28" preserveAspectRatio="none">
+                        <defs>
+                            <path id="gentle-wave" d="m -160,44.4 c 30,0 58,-18 87.7,-18 30.3,0 58.3,18 87.3,18 30,0 58,-18 88,-18 30,0 58,18 88,18 l 0,34.5 -351,0 z"/>
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="50" y="0" fill="#fff"/>
+                        </g>
+                    </svg>
+                </article>
+            </div>
+        </div>
+    </header>
+    <!-- ./FV -->
+
+    <!-- 固定ページテンプレート -->
+    <article id="page-wrapper">
+        <!-- Page Content -->
+        <div class="container">
+            <hr class="style-hr">
+                 <div class="row">
+                        <!-- Content -->
+                        <div class="col-md-9 page-style">
+            <!-- 固定ページテンプレート -->
+            <section class="page-content">
+
+                <!-- pタグ自動挿入制御 -->
+                <article id="campaign_content">
+                    <h2>キャンペーン</h2>
+                    <!-- マグカッププレゼント -->
+                    <h3>ITブートキャンプ、オリジナルマグカッププレゼント</h3>
+                    <p class="lead">12月中にお申込みされた全てのお客様に、ITブートキャンプの<span class="strong">オリジナルマグカップ</span>をプレゼント致します(^^)</p>
+
+                    <h4>こんな方にお薦めです！</h4>
+                    <div class="row">
+                        <div class="col-md-3 col-md-push-9 col-sm-4 col-sm-push-8 col-xs-12">
+                            <img
+                                src="http://i-b-c.jp/wp-content/themes/it-bootcamp/dist/img/xibc-mug.jpg.pagespeed.ic.GYPyZYQU5C.webp"
+                                class="img-responsive sp-img"
+                                alt="IBCマグカップ"
+                                pagespeed_url_hash="1748167824"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                                width="768"
+                                height="768">
+                        </div>
+                        <div class="col-md-9 col-md-pull-3 col-sm-8 col-sm-pull-4 col-xs-12">
+                            <ul class="disc">
+                                <li class="txt-16">PC作業のお供に、、、</li>
+                                <li class="txt-16">ガチのキャンプのお供に、、、</li>
+                                <li class="txt-16">一輪の花を飾りたいときに、、、</li>
+                                <li class="txt-16">前髪が気になるけど、鏡が手元にないときに、、、</li>
+                                <li class="txt-16">コースターの上に何も置くものがないときに、、、<br>
+                                    <small>※コースターは付いておりません。</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <p class="lead">ITブートキャンプに申し込もうか悩んでいたあなた、今がチャンスです！</p>
+                    <!-- ./マグカッププレゼント -->
+
+                    <hr>
+
+                    <!-- 飛行機代無料 -->
+                    <h3>【先着10名限定】飛行機代無料キャンペーン</h3>
+                    <div class="row">
+                        <div class="col-md-3 col-md-push-9 col-sm-4 col-sm-push-8 col-xs-12">
+                            <img
+                                src="http://i-b-c.jp/wp-content/themes/it-bootcamp/dist/img/xishigaki-image.jpg.pagespeed.ic.kBv5O8aMJ3.webp"
+                                class="img-responsive sp-img"
+                                alt="石垣島"
+                                pagespeed_url_hash="4228503183"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                                width="768"
+                                height="768">
+                        </div>
+                        <div class="col-md-9 col-md-pull-3 col-sm-8 col-sm-pull-4 col-xs-12">
+                            <p class="lead">石垣島までの<span class="strong">飛行機代が往復無料</span>になるお得なキャンペーンです！</p>
+                            <p class="txt-16">石垣島校は移転の為、3月末をもって終了となりますので、お申し込みはお早めに！</p>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <a href="http://i-b-c.jp/ishigaki/" class="btn_e">石垣島校の詳細はこちら</a>
+                    </div>
+                    <!-- ./飛行機代無料 -->
+                </article>
+                <hr>
+                <p>
+                    LINE@ LINE@では卒業後のお仕事や島のシェアハウスの風景など非公開情報を公開します！
+                </p>
+                {% include "/elements/contact_link.twig" %}
+            </section>
+
+        </div>
+        <div class="col-md-3">
+          {% include "/elements/sidebar.twig" %}
+        </div>
+      </div>
+      </div>
+    </article>
+{% endblock %}

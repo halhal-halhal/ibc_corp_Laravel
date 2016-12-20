@@ -1,0 +1,460 @@
+{% extends "/layouts/base.twig" %} {% block content %} {% include "/elements/header.twig" %}
+    <!-- FV -->
+    <header id="canvas-container">
+      <div class="parallax-picture                                     all-bg
+                                    ">
+        <div class="top_pic">
+          <article id="recommend-pic" class="parallax-pic_inner">
+            <h1>フリーランス育成コース</h1>
+            <svg class="editorial" viewBox="0 24 150 28" preserveAspectRatio="none">
+             <defs>
+              <path id="gentle-wave" d="m -160,44.4 c 30,0 58,-18 87.7,-18 30.3,0 58.3,18 87.3,18 30,0 58,-18 88,-18 30,0 58,18 88,18 l 0,34.5 -351,0 z"/>
+             </defs>
+              <g class="parallax">
+               <use xlink:href="#gentle-wave" x="50" y="0" fill="#fff"/>
+              </g>
+            </svg>
+          </article>
+        </div>
+      </div>
+    </header>
+    <!-- ./FV -->
+
+    <!-- 固定ページテンプレート -->
+    <article id="page-wrapper">
+      <!-- Page Content -->
+      <div class="container">
+        <hr class="style-hr">
+             <div class="row">
+                    <!-- Content -->
+                    <div class="col-md-9 page-style">
+              <!-- 固定ページテンプレート -->
+              <section class="page-content">
+
+<!-- 大見出し -->
+  <img class="img-responsive" src={{asset('/img/catch-freelance.jpg')}} alt="">
+  <!-- ./大見出し -->
+
+  <!-- col-01 -->
+  <div class="row">
+    <div class="col-md-10 col-sm-12 col-md-offset-1">
+      <h2 class="style-2">フリーランス育成コースとは？</h2>
+      <p class="lead">自分で仕事を請けて、好きな時に好きな場所で仕事をする『フリーランス』。</p>
+      <ul class="disc">
+        <li class="txt-16">「今の仕事からジョブチェンジしたい」</li>
+        <li class="txt-16">「場所にとらわれず自由に生きたい」</li>
+        <li class="txt-16">「自分の力を試したい」</li>
+      </ul>
+      <p>そんな、”これからフリーランスを目指す方”、”フリーランスとしてもっと積極的に仕事をしたい方”に向けたコースです。<br>
+      クライアントの要望をサイトという形にするだけでなく、売れるサイトを作る技術・広告からサイトへの誘導・集客を自らできるようになります。これに加え、財務・営業スキルまで幅広く網羅することで、卒業後には一人前のフリーランスとして月３０〜５０万円を稼ぐことを目指します。</p>
+  <!-- ./col-01 -->
+
+  <!-- col-02 -->
+      <h3>学べる内容</h3>
+      <!-- Webデザイン -->
+      <div class="course-summary-card row row-gap-medium">
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+              <img src={{asset('/img/icon-webdesign.png')}} class="img-responsive center-block">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="h-slim">Webデザイン
+                <span class="badges">
+                  <!-- バッジエリア -->
+                  <span  class="badge badge-squared badge-recommend text-uppercase">人気</span>
+                  <!-- ./バッジエリア -->
+                </span>
+              </h3>
+            </div>
+          </div>
+          <div class="course-summary-card__content">
+            <p>現在、主流とされているPC・タブレット・スマートフォンに最適化されたHP制作ができるようになります。</p>
+          </div>
+        </div>
+      </div>
+      <hr class="style-hr"/>
+      <!-- ./Webデザイン -->
+      <!-- グラフィック -->
+      <div class="course-summary-card row row-gap-medium">
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+              <img src={{asset('/img/icon-graphic.png')}} class="img-responsive center-block">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="h-slim">グラフィック
+                <span class="badges">
+                  <!-- バッジエリア -->
+                  <span class="badge badge-squared badge-new text-uppercase">NEW</span>
+                  <!-- ./バッジエリア -->
+                </span>
+              </h3>
+            </div>
+          </div>
+          <div class="course-summary-card__content">
+            <p>llustratorとPhotoshopを駆使して、DTP（印刷物）〜Webまで幅広く編集・デザイン出来るスキルを身に付けることができます。</p>
+          </div>
+        </div>
+      </div>
+      <hr class="style-hr"/>
+      <!-- ./グラフィック -->
+      <!-- Wordpress -->
+      <div class="course-summary-card row row-gap-medium">
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+              <img src={{asset('/img/icon-wp.png')}} class="img-responsive center-block">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="h-slim">Wordpress
+                <span class="badges">
+                  <!-- バッジエリア -->
+                  <!-- ./バッジエリア -->
+                </span>
+              </h3>
+            </div>
+          </div>
+          <div class="course-summary-card__content">
+            <p>WordPressを活用してCMS機能をもったウェブサイト制作ができるようになる。</p>
+          </div>
+        </div>
+      </div>
+      <hr class="style-hr"/>
+      <!-- ./Wordpress -->
+      <!-- マーケティング -->
+      <div class="course-summary-card row row-gap-medium">
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                <img src={{asset('/img/icon-mbc.png')}} class="img-responsive center-block">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="h-slim">マーケティング
+                <span class="badges">
+                  <!-- バッジエリア -->
+                  <!-- ./バッジエリア -->
+                </span>
+              </h3>
+            </div>
+          </div>
+          <div class="course-summary-card__content">
+            <p>Webサイトの解析、デジタル広告の知識を学び、最終的には運用ができるようになることを目的としています。</p>
+          </div>
+        </div>
+      </div>
+      <hr class="style-hr"/>
+      <!-- ./マーケティング -->
+      <!-- 財務 -->
+      <div class="course-summary-card row row-gap-medium">
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+              <img src={{asset('/img/icon-finance.png')}} class="img-responsive center-block">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="h-slim">財務
+                <span class="badges">
+                  <!-- バッジエリア -->
+                  <!-- ./バッジエリア -->
+                </span>
+              </h3>
+            </div>
+          </div>
+          <div class="course-summary-card__content">
+            <p>決算分析や節税の知識など、個人事業主として必要な財務の知識を学びます。</p>
+          </div>
+        </div>
+      </div>
+      <hr class="style-hr"/>
+      <!-- ./財務 -->
+      <!-- 営業 -->
+      <div class="course-summary-card row row-gap-medium">
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+              <img src={{asset('/img/icon-sales.png')}} class="img-responsive center-block">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="h-slim">営業
+                <span class="badges">
+                  <!-- バッジエリア -->
+                  <!-- ./バッジエリア -->
+                </span>
+              </h3>
+            </div>
+          </div>
+          <div class="course-summary-card__content">
+            <p>自ら営業・受注できるようなマインドセットの方法、実際の現場で役立つ営業のコツやスキルを学びます。</p>
+          </div>
+        </div>
+      </div>
+      <hr class="style-hr"/>
+      <!-- ./営業 -->
+  <!-- ./col-02 -->
+
+  <!-- col-03 -->
+  <h3>料金</h3>
+  <div class="row">
+    <div class="col-sm-9">
+      <p class="lead">通常７０万円（税別）を、島根県浜田市『ふるさと農業研修生制度』の活用で、<span class="strong">実質０円</span>で受講が可能です。<br>
+      <span class="txt-14">※Webデザイン・グラフィック・WordPress・マーケティング・財務・営業全て含んだ料金です。</span></p>
+      <p>島根県浜田市『ふるさと農業研修生制度』を活用し、実質０円でフリーランス育成コースを受講することができます。島根県では、県外からUIターンして、兼業就農をする方を応援する、『ふるさと農業研修生制度』という制度を導入しています。</p>
+      <ul class="disc">
+        <li class="txt-16">原則６５歳未満で、県外からUIターンされた方が対象。</li>
+        <li class="txt-16">市町村の認定を受けることが必要です。</li>
+      </ul>
+    </div>
+    <div class="col-sm-3 hidden-xs">
+      <img src={{asset('/img/icon-freelance__rich.png')}} class="img-responsive center-block">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <h4 class="style-2">＜支援内容＞</h4>
+      <p class="lead">就農前基礎研修 - 島根県浜田市『ふるさと農業研修生制度』<br>
+      <small>就農前に行う研修期間中に必要な経費等が助成されます。</small></p>
+      <dl>
+        <dt>助成額</dt>
+        <dd>１年以内　<span class="strong">180万円/年（毎月15万円）</span>支給 + 住宅手当（家賃の半分、<span class="strong">最大2万円/月</span>）<br>
+        <small>※毎月支給される助成金15万円の中から、研修費をお支払いいただきます。</small></dd>
+        <dt>研修費</dt>
+        <dd>70万円（税別）→ 分割でのお支払いが可能</dd>
+        <dt>毎月のお支払い金額</dt>
+        <dd>5万8,333円（税別）× 12回（1年間）払い</dd>
+      </dl>
+      <p>この制度を活用することで、毎月一定額の支援を受けながら、フリーランスに必要なスキルを習得することができます。</p>
+    </div>
+  </div>
+  <!-- ./col-03 -->
+
+  <!-- col-04 -->
+  <h3>期間</h3>
+  <div class="row">
+    <div class="col-sm-9">
+      <p class="lead">2017年4月スタート～1年間</p>
+      <p>農業研修を受けながら、ITブートキャンプフリーランスコースを受講して頂きます。<br>
+      （農業研修の目安：8時間/日 ※研修を行う農家によって異なります）</p>
+    </div>
+    <div class="col-sm-3 hidden-xs">
+      <img src={{asset('/img/icon-freelance__calender.png')}} class="img-responsive center-block">
+    </div>
+  </div>
+  <!-- ./col-04 -->
+
+  <!-- col-05 -->
+  <h3>受講場所</h3>
+  <div class="row">
+    <div class="col-sm-9">
+      <p class="lead">島根県浜田市</p>
+      <p class="txt-14">※研修中は浜田市内に居住して頂くことが条件となります。<br>
+      ※農業研修を受ける農家は、事前の現地視察により決めることができます。</p>
+    </div>
+    <div class="col-sm-3 hidden-xs">
+      <img src={{asset('/img/icon-freelance__place.png')}} class="img-responsive center-block">
+    </div>
+  </div>
+  <!-- ./col-05 -->
+
+  <!-- col-06 -->
+  <h3>参加条件</h3>
+  <div class="row">
+    <div class="col-sm-9">
+      <ul class="disc">
+        <li class="txt-16">原則65歳未満の方</li>
+        <li class="txt-16">雇用保険を受ける資格がある方</li>
+        <li class="txt-16">マニュアル車が運転できる方</li>
+        <li class="txt-16">研修中、浜田市内に居住することが可能な方</li>
+      </ul>
+    </div>
+    <div class="col-sm-3 hidden-xs">
+      <img src={{asset('/img/icon-freelance__card.png')}} class="img-responsive center-block">
+    </div>
+  </div>
+  <!-- ./col-06 -->
+
+  <hr>
+
+  <!-- col-07 -->
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 col-sm-12">
+      <div class="flow_info">
+        <table class="program-flow__b">
+            <tbody>
+              <tr>
+                <th colspan="2">
+                  <h2>申請・受講までの流れ</h2>
+                </th>
+              </tr>
+              <tr>
+                <th class="flow-bg-1" colspan="2">
+                  <h3 class="style-2">島根県浜田市で現地視察</h3>
+                  <p>制度を導入している農家を視察します。</p>
+                </th>
+              </tr>
+              <tr>
+                <th class="flow-bg-2">
+                  <h3 class="style-2">体験就農</h3>
+                  <p>実際に農家で体験就農して頂きます。</p>
+                </th>
+                <td>2～5日間程度</td>
+              </tr>
+              <tr>
+                <th class="flow-bg-3">
+                  <h3 class="style-2">審査会</h3>
+                  <p>役場の方との面談を行って頂きます。</p>
+                  <p class="lead">面談時に必要なもの</p>
+                  <p>履歴書、問診票、研修申請書、誓約書、住民票</p>
+                  <p class="txt-14">※審査会までに島根に住民票を移して頂く必要があります。<br>
+                  もしくは審査会の段階で申請中であることが条件となります。</p>
+                </th>
+                <td>2017年2月半ば予定</td>
+              </tr>
+              <tr>
+                <th class="flow-bg-4">
+                  <h3 class="style-2">ITブートキャンプフリーランス育成コース</h3>
+                  <p>農業研修開始</p>
+                </th>
+                <td>2017年4月スタート予定</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+      </div>
+    </div>
+  </div>
+  <!-- ./col-07 -->
+
+  <div class="row">
+    <div class="svg__box">
+      <svg  xmlns="http://www.w3.org/2000/svg" width="670" height="235" viewBox="560.4 -110.4 670 235" enable-background="new 560.4 -110.4 670 235">
+        <path class="wind" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="50" stroke-dashoffset="50" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M597.8-86.2h21.7m185.4-3.4h13.5m364.1 25.6h13.5m-225.5-33.8h21.7m35.8 65.8h8.1m-277.8 72h21.7" fill="none"/>
+        <g class="clouds" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="200" stroke-dashoffset="200" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" fill="none">
+          <path d="M768.1-5.9c-.6-7.3-6.6-13-14.1-13-1.8 0-3.5.3-5.1.9-2.8-5.7-8.7-9.6-15.6-9.6-8.2 0-15.1 5.7-16.9 13.4-.8-.2-1.7-.3-2.6-.3-5.3 0-9.6 3.7-10.6 8.7l64.9-.1zm370.7-60c-.5-6.7-6.1-12-13-12-1.6 0-3.2.3-4.7.9-2.6-5.3-8-8.9-14.3-8.9-7.6 0-13.9 5.2-15.6 12.3-.8-.2-1.6-.3-2.4-.3-4.8 0-8.9 3.4-9.8 8h59.8zm81.2 56.5c-.5-6.4-5.9-11.4-12.4-11.4-1.5 0-3.1.3-4.4.9-2.5-5-7.7-8.4-13.6-8.4-7.2 0-13.2 5-14.9 11.7-.8-.2-1.5-.3-2.3-.3-4.6 0-8.4 3.3-9.3 7.7l56.9-.2zm-128.1 29.4c-.6-7.4-6.8-13.3-14.3-13.3h-.8c-2.8-5.3-8.3-8.9-14.7-8.9-6.5 0-12.1 3.7-14.9 9.2-.9-.2-1.9-.3-2.9-.3-6.7 0-12.2 5.5-12.2 12.2 0 .4 0 .7.1 1.1h59.7zm-358.3-93.8c-.6-7.4-6.8-13.3-14.3-13.3h-.8c-2.8-5.3-8.3-8.9-14.7-8.9-6.5 0-12.1 3.7-14.8 9.2-.9-.2-1.9-.3-2.8-.3-6.7 0-12.2 5.4-12.2 12.2 0 .4 0 .7.1 1.1h59.5zM620.8-15.8c0-4.5-3.6-8.1-8.1-8.1-1.3 0-2.5.3-3.5.8-1.9-5.2-6.9-8.9-12.8-8.9-4.7 0-8.9 2.4-11.3 6.1-1.1-.5-2.3-.7-3.6-.7-5.2 0-9.5 4.3-9.5 9.5 0 .5 0 .9.1 1.4h48.7v-.1z"/>
+        </g>
+        <path class="path-delay--4" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="300" stroke-dashoffset="300" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M905.4-36.3v20.3l23.1 21.8-23.1 21.8v20.3l44.6-42.1zM888.2 27.6l-23.1-21.8 23.1-21.8v-20.3l-44.6 42.1 44.6 42.1z"/></g>
+        <g class="path-delay--3" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="500" stroke-dashoffset="500" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><path d="M896.8-73.3c-43.7 0-79.1 35.4-79.1 79.1s35.4 79.1 79.1 79.1c43.7 0 79.1-35.4 79.1-79.1s-35.4-79.1-79.1-79.1zM896.8 70.7c-35.8 0-64.9-29.1-64.9-64.9s29.1-64.9 64.9-64.9c35.8 0 64.9 29.1 64.9 64.9s-29.1 64.9-64.9 64.9z"/></g>
+        <path class="path" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="1300" stroke-dashoffset="1300" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M1230.4 112.3c-5.6 0-10.2-4.6-10.2-10.2 0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2" fill="none"/>
+        <g class="path-delay" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="500" stroke-dashoffset="500" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><path d="M1001.1 110.3l57.8-57.9 19.3 19.3 53.7-53.7 45.7 45.6 22.4-22.3 32.4 32.5M790 110.3l-69-69-22.3 22.3-42.6-42.6-31.5 31.4-21.3-21.3-43.7 43.7"/></g>
+        <g class="path-delay" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round"  stroke-linecap="butt" stroke-miterlimit="10" stroke-dasharray="100" stroke-dashoffset="100" stroke="#75cb5d" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><path d="M1214.5 53.5l-9.5 9.5-3-3-4.1 4-11.5-11.5M1112.7 37.3l7.1 7.1 5-5.1 7.1 7.1 7.1-7.1 6.2 6 7.1-7.1M711.8 51.5l5.1 5 4.1-4.1 5 5.1 5.1-5.1M668.3 33.2l-6.2 6.1-5.1-5.1-7.1 7.1-7.1-7.1M1046 65.4l8 7.9 5.5-5.5 6 6 7.4-7.4M590.7 43.7l7.3 7.3 4.5-4.6 6.1 6.1 8.2-8.2"/></g></svg>
+      </div>
+    </div>
+
+  <!-- col-08 -->
+  <h3>なぜ『ふるさと農業研修生制度』に注目したのか？</h3>
+  <p class="lead">フリーランス育成コースの目的は、名ばかりのフリーランスではなく、”本当に稼げる”フリーランスを育てることです。</p>
+  <p>一人前のフリーランスとして活躍するには、仕事に生かせるスキルや経験が必要です。しかし、そのスキルや経験を身につけ、稼げるようになるまでの期間は、当然仕事の選択肢も少なく安定した収入もありません。<br>
+  そこでITブートキャンプでは、『ふるさと農業研修制度』の活用を前提としたフリーランス育成コースを新しく導入しました。</p>
+  <p>農業研修を受けながらITのスキルも習得する。しかもこの制度を活用することにより、毎月一定の支援金を受け取ることができるので、研修費用も実質０円になります。<br>
+  また、卒業後は、ITのフリーランスという選択肢だけでなく、半農業・半ITという兼業型のフリーランスとして活躍するという選択肢も広がります。</p>
+  <!-- ./col-08 -->
+
+  <!-- col-09 -->
+  <h3>卒業後の未来</h3>
+  <p class="lead">一人前のフリーランスとして活躍</h5>
+  <p class="mb-2">Web制作のスキルだけでなく、マーケティング・財務・営業などのフリーランスとして活躍するための様々なスキルを習得することで、卒業後、すぐに一人前のフリーランスとして活躍することができます。</p>
+
+  <p class="lead">弊社からの業務委託を受けることが可能</p>
+  <p>卒業後はもちろん、一年の研修期間の内に弊社から業務委託を受けることも可能です。</p>
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <h4 class="style-2">＜業務委託例＞</h4>
+      <div class="col-md-8 col-sm-12">
+      <dl>
+      <dt>ITブートキャンプオンラインメンター（講師）</dt>
+      <dd>〜5万円/月</dd>
+      <dt>ITブートキャンプ現地メンター（講師）</dt>
+      <dd>見習い期間10万円/月〜</dd>
+      </dl>
+      </div>
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <img src={{asset('/img/freelance__mentor.png')}} class="img-responsive" alt="">
+      </div>
+      <div class="col-md-12 col-sm-12">
+        <p>その他にも、バナー制作依頼、リスト作成などのお仕事もございます。<br>
+        <small>※スキル等により案件や金額が異なります。<br>
+        ※弊社からの業務委託はお約束できるものではございません。</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- ./col-09 -->
+
+  <!-- col-10 -->
+  <h3>農業とITを組み合わせた生き方</h3>
+  <p class="lead">農業とITを組み合わせた新しい働き方の選択肢が広がります。</p>
+  <div class="row">
+    <div class="col-md-4 hidden-sm hidden-xs">
+      <img src={{asset('/img/freelance__island.png')}} class="img-responsive fuwafuwa" alt="">
+    </div>
+    <div class="col-md-8 col-sm-12">
+      <p>１年間の農業研修の後、引き続き島根県浜田市で兼業就農のための実践研修を受ける場合、半農半X支援事業『就農前研修経費助成』として<span class="strong">１年以内・１８０万円/年</span>の助成を継続して受けることができます。<br>
+      さらにその後、就農をされた場合には、半農半X支援事業『定住定着助成』として<span class="strong">１年以内・１５０万円/年</span>の助成を受けることができます。</br>
+      農業をすることで安定した支援を受けながら、Webの仕事でも収入を得る。<br>
+      地に足をつけた形でフリーランスという生き方を実現できます。</p>
+    </div>
+  </div>
+  <!-- ./col-10 -->
+
+
+  <hr>
+  <!-- col-12 -->
+  <h3>よくあるご質問</h3>
+  <h4>Q：フリーランス育成コースの支払い方法について教えて下さい。</h4>
+  <p class="txt-16">一括分割でのお支払い、もしくは分割でのお支払いも可能です。無料面談の際にご相談下さい。</p>
+
+  <h4>Q：農業研修を受けなかった場合、フリーランス育成コースは受講できないのでしょうか?</h4>
+  <p class="txt-16">フリーランス育成コースの受講は可能です。ただし、その場合は支援金がなくなる為、フリーランス育成コースの受講費用（70万円/税別）を全てお支払い頂くことになります。</p>
+
+  <h4>Q：審査会での審査に通らなかったらどうなりますか?</h4>
+  <p class="txt-16">フリーランス育成コースは、審査が通って確実に支援金がもらえることが確定してからスタートとなります。<br>
+    その為、審査に通らなかった＝支援金がもらえない状態での受講はご案内しておりません。<br>
+    ご希望がある場合は、実費70万円（税抜）にてフリーランス育成コースをご案内する事が可能です。</p>
+
+  <h4>Q：農業研修を最後まで受けずに途中でやめてしまった場合はどうなりますか?</h4>
+  <p class="txt-16">農業研修に参加頂いた月に関してのみ助成金が支給されます。</p>
+  <!-- col-12 -->
+  </div>
+</div>
+
+
+<hr>
+<p>
+  LINE@ LINE@では卒業後のお仕事や島のシェアハウスの風景など非公開情報を公開します！
+</p>
+
+{% include "/elements/contact_link.twig" %}
+</section>
+
+</div>
+<div class="col-md-3">
+  {% include "/elements/sidebar.twig" %}
+</div>
+</div>
+</article>
+{% endblock %}
