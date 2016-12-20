@@ -34,7 +34,7 @@
         <div class="col-sm-9">
           <div class="panel panel-default">
             <div class=panel-body>
-              <h1>カリキュラム　詳細</h1>
+              <h2>カリキュラム　詳細</h2>
               <p>画像:
                 <img src="/uploads/caliculam/{{caliculam_data['caliculam_image']}}" alt width=80>
               </p>
@@ -52,7 +52,7 @@
               </p>
               <p>更新日時:
                 {{caliculam_data["updated_at"] |date("Y年m月d日 H時i分")}}
-              </p><hr>
+              </p><br>
               <p>
                 <a href="/admin/caliculam/edit/{{caliculam_data['caliculam_id']}}/">編集</a> /
                 <a href="/admin/caliculam/delete/{{caliculam_data['caliculam_id']}}/">削除</a>
@@ -66,21 +66,21 @@
               <p>カリキュラム:
                 {{lessen_data["caliculam_title"]}}
               </p>
-              <p>レッスン画像:
+              <p>画像:
                 <img src="/uploads/lessen/{{lessen_data['lessen_image']}}" alt width=80>
               </p>
-              <p>レッスンタイトル:
+              <p>タイトル:
                 {{lessen_data["lessen_title"]}}
               </p>
-              <p>レッスンPRテキスト:
+              <p>PRテキスト:
                 {{lessen_data["lessen_pr_text"]}}
               </p>
-              <p>レッスンテキスト:
+              <p>テキスト:
                 {{lessen_data["lessen_text"] |slice(0, 30)}}&nbsp;...
               </p>
-              <p>レッスン更新日時:
+              <p>更新日時:
                 {{lessen_data["updated_at"] |date("Y年m月d日 H時i分")}}
-              </p>
+              </p><br>
               <p>
                 <a href="/admin/lessen/edit/{{lessen_data['lessen_id']}}/">編集</a> /
                 <a href="/admin/lessen/delete/">削除</a>
