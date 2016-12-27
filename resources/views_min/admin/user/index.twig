@@ -57,15 +57,11 @@
               <p>生年月日:
                 {{user_data["user_birthday"] |date("Y年m月d日")}}
               </p>
-              <p>住所:
-                {{user_data["user_address"]}}
-              </p>
-              <p>PR文:
-                {{user_data["user_pr_text"] |nl2br}}
-              </p>
               <p>登録日:
                 {{user_data["created_at"]}}
               </p>
+              <br>
+                <a href="/admin/user/{{user_data['user_id']}}/">詳細</a>
               <hr>
               {% endfor %}
               {% endif %}

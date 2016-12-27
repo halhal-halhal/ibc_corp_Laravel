@@ -55,7 +55,7 @@
               </p><br>
               <p>
                 <a href="/admin/caliculam/edit/{{caliculam_data['caliculam_id']}}/">編集</a> /
-                <a href="/admin/caliculam/delete/{{caliculam_data['caliculam_id']}}/">削除</a>
+                <a href="/admin/caliculam/delete/{{caliculam_data['caliculam_id']}}/"><font color="red">削除</font></a>
               </p><hr>
               {% if lessen_data_list | length < 1 %}
               <p>表示できるレッスンはありません
@@ -83,7 +83,7 @@
               </p><br>
               <p>
                 <a href="/admin/lessen/edit/{{lessen_data['lessen_id']}}/">編集</a> /
-                <a href="/admin/lessen/delete/{{lessen_data['lessen_id']}}">削除</a>
+                <a href="/admin/lessen/delete/{{lessen_data['lessen_id']}}"><font color="red">削除</font></a>
               </p><hr>{% endfor %}
               {% endif %}
               <p>

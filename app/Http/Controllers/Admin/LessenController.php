@@ -7,6 +7,7 @@ use App\Http\Logics\LessenLogic;
 use App\Http\Logics\CaliculamLogic;
 use Request;
 use Redirect;
+use DB;
 
 class LessenController extends Controller
 {
@@ -105,5 +106,14 @@ class LessenController extends Controller
         }
 
         return Redirect::to("/admin/caliculam/" . $input["lessen_caliculam_id"]);
+    }
+
+    public function delete($lessen_id = null) //レッスン削除
+    {
+        $lessen_data = [];
+        if (isset($lessen_id) && !empty($lessen_id)) {
+            DB::delete('delete from lessen where lessen_id = ?',[$lessen_id]);
+        }
+        return Redirect::to("/admin/caliculam_list/");
     }
 }

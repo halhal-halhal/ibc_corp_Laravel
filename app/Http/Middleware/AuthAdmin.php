@@ -7,6 +7,7 @@ use App\Http\Models\UserModel;
 use Closure;
 use Session;
 use Redirect;
+use DB;
 
 class AuthAdmin
 {
@@ -30,13 +31,14 @@ class AuthAdmin
 
         // 権限確認
         $user_id = Session::get("user_id");
-        $privilegeLogic = new PrivilegeLogic;
-        $role_id = $privilegeLogic->getData($user_id);
+        //$privilegeLogic = new PrivilegeLogic;
+        //$role_id = $privilegeLogic->getData($user_id);
+
+        $role_id = DB::select('select user_role from User where user_id = ?',[$user_id]);
 
         if ((int)$role_id <= UserModel::ROLE_STAFF) {
             return Redirect::to("/logout");
         }
-
         return $next($request);
     }
 }

@@ -134,7 +134,7 @@ Route::group(["prefix" => "/mypage/", "namespace" => "Mypage", "middleware" => [
  * 管理画面
  *
  */
-Route::group(["prefix" => "/admin/", "namespace" => "Admin", "middleware" => ["web", "auth_admin",]], function () {
+Route::group(["prefix" => "/admin/", "namespace" => "Admin", "middleware" => ["web", "auth_admin"]], function () {
     // トップページ
     Route::get("/", "IndexController@index");
     // ユーザー一覧画面
@@ -143,6 +143,8 @@ Route::group(["prefix" => "/admin/", "namespace" => "Admin", "middleware" => ["w
     Route::get("/user/{user_id}", "UserController@detail")->where("user_id", "[0-9]+");
     // ユーザー権限変更 (ajax)
     Route::post("/user/change_user_role", "UserController@changeUserRole");
+    // ユーザー削除
+    Route::get("/user/delete/{caliculam_id}", "UserController@delete")->where("user_id", "[0-9]+");
     // カリキュラム一覧画面
     Route::get("/caliculam_list/{page?}", "CaliculamController@index")->where("page", "[0-9]+");
     // カリキュラム詳細画面
@@ -161,6 +163,8 @@ Route::group(["prefix" => "/admin/", "namespace" => "Admin", "middleware" => ["w
     Route::get("/lessen/edit/{lessen_id?}", "LessenController@edit")->where("lessen_id", "[0-9]+");
     // レッスン登録
     Route::post("/lessen/confirm", "LessenController@confirm");
+    // レッスン削除
+    Route::get("/lessen/delete/{lessen_id}", "LessenController@delete")->where("lessen_id", "[0-9]+");
     // メッセージ送信
     Route::get("/send_message", "SendMessageController@index");
     // メッセージ送信 (学生)

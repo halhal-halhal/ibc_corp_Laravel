@@ -164,19 +164,19 @@ class MessageLogic
     public function getDataList($user_id)
     {
         // 0件の場合がある
-        $message_list = $this->messageModel->getDataList(
+        $message_main_list = $this->messageModel->getDataList(
             [
                 [
                     "key" => "message_content.message_content_writer_id",
                     "operator" => "=",
                     "value" => $user_id,],
                 [
-                    "key" => "message_content.message_reader_writer_id",
+                    "key" => "message_content.message_content_reader_id",
                     "operator" => "=",
                     "value" => $user_id,
                     "is_or" => true,],]
         );
-dd($message_main_list);
+        dd($message_main_list);
         if (count($message_main_list) < 1) {
             return [];
         }

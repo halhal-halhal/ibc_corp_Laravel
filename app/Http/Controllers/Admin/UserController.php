@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Logics\UserLogic;
+use Request;
+use Redirect;
+use DB;
 
 class UserController extends Controller
 {
@@ -46,5 +49,15 @@ class UserController extends Controller
                 "account_data" => $this->userLogic->getData($user_id),
                 "html_class" => "admin users show",]
         );
+    }
+
+    public function delete($user_id = null) //ユーザー削除
+    {
+        $user_data = [];
+        if (isset($user_id) && !empty($user_id)) {
+          DB::delete('delete from User where user_id = ?',[$user_id]);
+        }
+
+        return Redirect::to("/admin/user_list/");
     }
 }
