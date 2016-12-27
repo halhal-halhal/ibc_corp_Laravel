@@ -52,7 +52,7 @@ class MessageContentLogic
             $this->messageContentModel->createData(
                 [
                     "message_content_message_id" => $message_id,
-                    "message_content_user_id" => $user_id,
+                    "message_content_writer_id" => $user_id,
                     "message_content_text" => $message_text,
                     "created_at" => date("Y-m-d H:i:s"),
                     "updated_at" => date("Y-m-d H:i:s"),]

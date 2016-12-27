@@ -49,7 +49,7 @@ class MessageLogic
         $this->messageContentModel->insertData(
             [
                 "message_content_message_id" => $message_id,
-                "message_content_user_id" => $user_id_from,
+                "message_content_writer_id" => $user_id_from,
                 "message_content_text" => $input["message_content"],
                 "created_at" => date("Y-m-d H:i:s"),
                 "updated_at" => date("Y-m-d H:i:s"),]
