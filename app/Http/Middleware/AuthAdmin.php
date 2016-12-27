@@ -34,10 +34,10 @@ class AuthAdmin
         //$privilegeLogic = new PrivilegeLogic;
         //$role_id = $privilegeLogic->getData($user_id);
 
-        $role_id = DB::select('select user_role from User where user_id = ?',[$user_id]);
+        $role_id = DB::table('user')->where('user_id', [$user_id])->value('user_role');
 
-        if ((int)$role_id <= UserModel::ROLE_STAFF) {
-            return Redirect::to("/logout");
+        if ((int)$role_id > UserModel::ROLE_STAFF) { 
+            return Redirect::to("/mypage");
         }
         return $next($request);
     }
