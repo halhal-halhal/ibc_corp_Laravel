@@ -151,6 +151,8 @@ Route::group(["prefix" => "/admin/", "namespace" => "Admin", "middleware" => ["w
     Route::get("/caliculam/edit/{caliculam_id?}", "CaliculamController@edit")->where("caliculam_id", "[0-9]+");
     // カリキュラム登録
     Route::post("/caliculam/confirm", "CaliculamController@confirm");
+    // カリキュラム削除
+    Route::get("/caliculam/delete/{caliculam_id}", "CaliculamController@delete")->where("caliculam_id", "[0-9]+");
     // レッスン一覧画面
     Route::get("/lessen_list/{page?}", "LessenController@index")->where("page", "[0-9]+");
     // レッスン詳細画面
