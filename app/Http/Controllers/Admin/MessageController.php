@@ -29,9 +29,9 @@ class MessageController extends Controller
   public function index($page = 1)
   {
     return $this->render(
-      "admin/message_list/index",
+      "admin/message/index",
       [
-        "message_data_list" => $this->messageLogic->getDataList(0),]
+        "message_data_list" => $this->messageLogic->getDataListAll(),]
       );
     }
 
@@ -41,7 +41,7 @@ class MessageController extends Controller
         "admin/message/detail",
         [
           // ユーザー情報 (アクセスユーザのuser_dataと区別するために'account'を使用)
-          "message_data" => $this->messageLogic->getData($message_id),
+          "message_data" => $this->MessageLogic->getData($message_id),
           "html_class" => "admin messages show",]
         );
       }
