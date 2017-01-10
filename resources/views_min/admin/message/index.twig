@@ -40,10 +40,14 @@
               {% else %}
               {% for message_data in message_data_list %}
               <p>ID:
-                {{message_data["message_id"]}}
+                {{message_data}}
+              </p>
+              <p>
+                Message:{{message_data_list["message_content_text"]}}
               </p>
               {% endfor %}
               {% endif %}
+
             </div>
           </div>
         </div>
