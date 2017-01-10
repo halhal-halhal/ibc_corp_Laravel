@@ -36,35 +36,34 @@
             <div class=panel-body>
               <h2>ユーザー詳細</h2><hr>
               <p>
-                <a href="/admin/user/{{user_data['user_id']}}/"><img src="/uploads/profile/{{user_data['user_image']}}" width=100 alt></a>
-
+                <a href="/admin/user/{{account_data['user_id']}}/"><img src="/uploads/profile/{{account_data['user_image']}}" width=100 alt></a>
               </p>
               <p>ID:
-                {{user_data["user_id"]}}
+                {{account_data["user_id"]}}
               </p>
               <p>名前:
-                {{user_data["user_real_name"]}}
+                {{account_data["user_real_name"]}}
               </p>
               <p>表示名:
-                {{user_data["user_name"]}}
+                {{account_data["user_name"]}}
               </p>
               <p>メールアドレス:
-                {{user_data["user_email"]}}
+                {{account_data["user_email"]}}
               </p>
               <p>生年月日:
-                {{user_data["user_birthday"] |date("Y年m月d日")}}
+                {{account_data["user_birthday"] |date("Y年m月d日")}}
               </p>
               <p>住所:
-                {{user_data["user_address"]}}
+                {{account_data["user_address"]}}
               </p>
               <p>PR文:
-                {{user_data["user_pr_text"] |nl2br}}
+                {{account_data["user_pr_text"] |nl2br}}
               </p>
               <p>登録日:
-                {{user_data["created_at"]}}
+                {{account_data["created_at"]}}
               </p>
               <br>
-              <a href="/admin/user/delete/{{user_data['user_id']}}"><font color="red">削除</font></a>
+              <a href="/admin/user/delete/{{account_data['user_id']}}"><font color="red">削除</font></a>
             </div>
           </div>
         </div>
