@@ -8,18 +8,27 @@ use App\Http\Logics\messageLogic;
 
 class MessageController extends Controller
 {
-    private $userLogic;
-    private $messageLogic;
+  private $userLogic;
+  private $messageLogic;
 
-    /**
-     * コンストラクタ
-     *
-     */
-    public function __construct()
-    {
-        parent::__construct();
+  /**
+  * コンストラクタ
+  *
+  */
+  public function __construct()
+  {
+    parent::__construct();
 
-        $this->userLogic = new UserLogic;
-        $this->messageLogic = new MessageLogic;
+    $this->userLogic = new UserLogic;
+    $this->messageLogic = new MessageLogic;
+  }
+
+  public function index($page = 1)
+  {
+    return $this->render(
+      "admin/message/index",
+      [
+        "message_data_list" => $this->userLogic->getDataList(),]
+      );
     }
-}
+  }
