@@ -27,11 +27,17 @@
     <hr class="style-hr">
     <!-- pタグ自動挿入制御 -->
     <article class="company_content">
+      <div class="row">
+        <div class="col-sm-3">
+          {% include "/elements/admin_left_column.twig" %}
+        </div>
+        <div class="col-sm-9">
       <div class="panel panel-default">
         <div class=panel-body>
 
-          <h1>管理画面トップ</h1>{% include "/elements/admin_left_column.twig" %}
+          <h2>管理画面トップ</h2>{% include "/elements/admin_left_column.twig" %}
         </div>
+      </div>
       </article>
     </div>
   </div>

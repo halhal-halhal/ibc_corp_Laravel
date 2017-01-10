@@ -29,9 +29,9 @@ class MessageController extends Controller
   public function index($page = 1)
   {
     return $this->render(
-      "admin/message/index",
+      "admin/message_list/index",
       [
-        "message_data_list" => $this->messageLogic->getData(7),]
+        "message_data_list" => $this->messageLogic->getDataList(0),]
       );
     }
 
