@@ -34,22 +34,23 @@
         <div class="col-sm-9">
           <div class="panel panel-default">
             <div class=panel-body>
-              <h2>管理画面ユーザー一覧</h2><hr>
+              <h2>ユーザー一覧</h2><hr>
               {% if user_data_list | length < 1 %}
               <p>表示できるユーザーはいません．</p>
               {% else %}
               {% for user_data in user_data_list %}
-              <p>
-                <a href="/admin/user/{{user_data['user_id']}}/"><img src="/uploads/profile/{{user_data['user_image']}}" width=100 alt></a>
-              </p>
+              <a href="/admin/user/{{user_data['user_id']}}/">
+                <div>
+              <h3>
+                {{user_data["user_name"]}} ( {{user_data["user_real_name"]}} )
+              </h3>
+            </div>
+            </a>
+                <div>
+                  <a href="/admin/user/{{user_data['user_id']}}/"><img src="/uploads/profile/{{user_data['user_image']}}" width=100 alt></a>
+                </div>
               <p>ID:
                 {{user_data["user_id"]}}
-              </p>
-              <p>名前:
-                {{user_data["user_real_name"]}}
-              </p>
-              <p>表示名:
-                {{user_data["user_name"]}}
               </p>
               <p>メールアドレス:
                 {{user_data["user_email"]}}

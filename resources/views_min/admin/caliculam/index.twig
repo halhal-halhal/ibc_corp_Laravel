@@ -39,12 +39,12 @@
               <p>申し込めるカリキュラムはありません。</p>
               {% else %}
               {% for caliculam_data in caliculam_data_list %}
-              <p>画像:
-                <img src="/uploads/caliculam/{{caliculam_data['caliculam_image']}}" alt width=80>
-              </p>
-              <p>タイトル:
+              <h3>
                 {{caliculam_data["caliculam_title"]}}
-              </p>
+              </h3>
+              <div>
+                <img src="/uploads/caliculam/{{caliculam_data['caliculam_image']}}" alt width=80>
+              </div>
               <p>価格:
                 {{caliculam_data["caliculam_price"]}}
               </p>

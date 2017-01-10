@@ -34,35 +34,33 @@
           <div class="col-sm-9 content">
             <div class="panel panel-default">
               <div class=panel-body>
-                <h1>カリキュラム一覧ページ</h1>
+                <h2>カリキュラム一覧</h2><hr>
                 {% if caliculam_data_list | length < 1 %}
                 <p>申し込めるカリキュラムはありません。</p>
                 {% else %}
                 {% for caliculam_data in caliculam_data_list %}
-                <p>カリキュラム画像:
+                <h3>{{caliculam_data["caliculam_title"]}}</h3><!-- CaliculamTitle -->
+                <div><!--Image-->
                   <img src="/uploads/caliculam/{{caliculam_data['caliculam_image']}}" alt width=80>
-                </p>
-                <p>カリキュラムタイトル:
-                  {{caliculam_data["caliculam_title"]}}
-                </p>
-                <p>カリキュラム価格:
+                </div>
+                <p>価格:
                   {{caliculam_data["caliculam_price"]}}
                 </p>
-                <p>カリキュラムPRテキスト:
+                <p>PRテキスト:
                   {{caliculam_data["caliculam_pr_text"]}}
                 </p>
-                <p>カリキュラムテキスト:
+                <p>テキスト:
                   {{caliculam_data["caliculam_text"] |slice(0, 30)}}&nbsp;...
                 </p>
-                <p>カリキュラム更新日時:
+                <p>更新日時:
                   {{caliculam_data["updated_at"] |date("Y年m月d日 H時i分")}}
-                </p>
+                </p><br>
                 <p>
                   <a href="/mypage/caliculam/{{caliculam_data['caliculam_id']}}/">カリキュラムを見る</a>
-                </p><hr>
-                <p>
+                /
                   <a href="/mypage/caliculam/regist/{{caliculam_data['caliculam_id']}}/">カリキュラムに申し込む</a>
                 </p>
+                <hr>
                 {% endfor %}
                 {% endif %}
               </div>

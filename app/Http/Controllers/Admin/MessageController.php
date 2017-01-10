@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Logics\UserLogic;
 use App\Http\Logics\messageLogic;
+use Request;
+use Redirect;
+use DB;
 
 class MessageController extends Controller
 {
@@ -28,7 +31,18 @@ class MessageController extends Controller
     return $this->render(
       "admin/message/index",
       [
-        "message_data_list" => $this->userLogic->getDataList(),]
+        "message_data_list" => $this->messageLogic->getData(7),]
       );
     }
+
+    public function detail($message_id)
+    {
+      return $this->render(
+        "admin/message/detail",
+        [
+          // ユーザー情報 (アクセスユーザのuser_dataと区別するために'account'を使用)
+          "message_data" => $this->messageLogic->getData($message_id),
+          "html_class" => "admin messages show",]
+        );
+      }
   }

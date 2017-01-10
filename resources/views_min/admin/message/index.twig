@@ -34,8 +34,16 @@
         <div class="col-sm-9">
           <div class="panel panel-default">
             <div class=panel-body>
-              <h1>メッセージ一覧</h1>
-
+              <h1>メッセージ一覧</h1><br>
+              {% if message_data_list | length < 1 %}
+              <p>表示できるメッセージはいません．</p>
+              {% else %}
+              {% for message_data in message_data_list %}
+              <p>ID:
+                {{message_data["message_id"]}}
+              </p>
+              {% endfor %}
+              {% endif %}
             </div>
           </div>
         </div>

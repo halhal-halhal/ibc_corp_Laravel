@@ -215,7 +215,6 @@ class MessageLogic
         }
 
         $message_data_list = $result->toArray();
-
         foreach ($message_data_list["data"] as $message) {
             $message_data_list["thread"][$message["message_id"]] = $this->getData($message["message_id"], true);
         }
