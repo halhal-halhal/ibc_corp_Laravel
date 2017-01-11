@@ -63,16 +63,11 @@
               {% else %}
               <h2>レッスン一覧</h2>
               {% for lessen_data in lessen_data_list %}
-              <p>カリキュラム:
-                {{lessen_data["caliculam_title"]}}
-              </p>
-              <p>画像:
+              <h3>{{lessen_data["lessen_title"]}}</h3>
+              <p>
                 <img src="/uploads/lessen/{{lessen_data['lessen_image']}}" alt width=80>
               </p>
-              <p>タイトル:
-                {{lessen_data["lessen_title"]}}
-              </p>
-              <p>PRテキスト:
+              <p>PR:
                 {{lessen_data["lessen_pr_text"]}}
               </p>
               <p>テキスト:

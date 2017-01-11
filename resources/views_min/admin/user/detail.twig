@@ -36,7 +36,7 @@
             <div class=panel-body>
               <h2>ユーザー詳細</h2><hr>
               <p>
-                <a href="/admin/user/{{account_data['user_id']}}/"><img src="/uploads/profile/{{account_data['user_image']}}" width=100 alt></a>
+                <a href="/admin/user/{{account_data['user_id']}}/"><img src={% if(user_data.user_image != "no_image.png") %}'/uploads/profile/{{user_data.user_image}}'{% else %}{{ asset('img/ibc_logo.png') }}{% endif %} width=100 alt></a>
               </p>
               <p>ID:
                 {{account_data["user_id"]}}

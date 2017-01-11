@@ -41,14 +41,14 @@
               {% for user_data in user_data_list %}
               <a href="/admin/user/{{user_data['user_id']}}/">
                 <div>
-              <h3>
-                {{user_data["user_name"]}} ( {{user_data["user_real_name"]}} )
-              </h3>
-            </div>
-            </a>
-                <div>
-                  <a href="/admin/user/{{user_data['user_id']}}/"><img src="/uploads/profile/{{user_data['user_image']}}" width=100 alt></a>
+                  <h3>
+                    {{user_data["user_name"]}} ( {{user_data["user_real_name"]}} )
+                  </h3>
                 </div>
+              </a>
+              <div>
+                <a href="/admin/user/{{user_data['user_id']}}/"><img src={% if(user_data.user_image != "") %}'/uploads/profile/{{user_data.user_image}}'{% else %}{{ asset('img/ibc_logo.png') }}{% endif %} width=100 alt></a>
+              </div>
               <p>ID:
                 {{user_data["user_id"]}}
               </p>
@@ -62,7 +62,7 @@
                 {{user_data["created_at"]}}
               </p>
               <br>
-                <a href="/admin/user/{{user_data['user_id']}}/">詳細</a>
+              <a href="/admin/user/{{user_data['user_id']}}/">詳細</a>
               <hr>
               {% endfor %}
               {% endif %}
