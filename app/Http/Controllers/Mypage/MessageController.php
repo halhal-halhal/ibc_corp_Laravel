@@ -42,9 +42,10 @@ class MessageController extends BaseController
         return $this->render(
             "mypage/message/index",
             [
-                "message_data_list" => $this->messageLogic->getDataList(Session::get("user_id")),
-                "html_class" => "mypage messages index",]
-        );
+                   "message_data_list" => $this->messageLogic->getDataList(Session::get("user_id")),
+                   "html_class" => "mypage messages index",
+                  //"message_data_list" => $this->messageLogic->getDataList(0),
+        ]);
     }
 
     /**

@@ -31,6 +31,7 @@ class MessageController extends Controller
     return $this->render(
       "admin/message/index",
       [
+        // "message_data_list" => $this->messageLogic->getDataListAll(),
         "message_data_list" => $this->messageLogic->getDataListAll(),
       ]
       );

@@ -36,7 +36,7 @@
             <div class=panel-body>
               <h1>メッセージ一覧</h1><br>
               {% if message_data_list | length < 1 %}
-              <p>表示できるメッセージはいません．</p>
+              <p>表示できるメッセージはありません．</p>
               {% else %}
               {% for message in message_data_list %}
               <p>ID:
@@ -47,7 +47,7 @@
               </p>
               {% endfor %}
               {% endif %}
-               (Message未実装. SQL文が.twigファイルから実行できれば手っ取り早い. Logicでmessage_data_listが配列化されていないことが諸悪の根源？<br>
+                (Message未実装. SQL文が.twigファイルから実行できれば手っ取り早い. Logicでmessage_data_listが配列化されていないことが諸悪の根源？<br>
                message_dataにidの数値のみ入ってる状態？→データが取得できない)
             </div>
           </div>

@@ -163,19 +163,22 @@ class MessageLogic
      */
     public function getDataList($user_id)
     {
-        // 0件の場合がある
-        $message_main_list = $this->messageModel->getDataList(
-            [
-                [
-                    "key" => "message_content.message_content_writer_id",
-                    "operator" => "=",
-                    "value" => $user_id,],
-                [
-                    "key" => "message_content.message_content_reader_id",
-                    "operator" => "=",
-                    "value" => $user_id,
-                    "is_or" => true,],]
-        );
+
+        $message_main_list = \DB::select('select * from message where message_user_id = ?',[$user_id]);
+        // // 0件の場合がある
+        // $message_main_list = $this->messageModel->getDataList(
+        //     [
+        //         [
+        //             "key" => "message_content.message_content_writer_id",
+        //             "operator" => "=",
+        //             "value" => $user_id,],
+        //         [
+        //             "key" => "message_content.message_content_reader_id",
+        //             "operator" => "=",
+        //             "value" => $user_id,
+        //             "is_or" => true,],]
+        // );
+
         dd($message_main_list);
         if (count($message_main_list) < 1) {
             return [];
@@ -209,7 +212,6 @@ class MessageLogic
     public function getDataListAll($paginate = false, $page = 1)
     {
         $result = $this->messageModel->getIdList($paginate, $page);
-
         if (count($result) < 1) {
             throw new Exception("メッセージの取得に失敗しました．");
         }
