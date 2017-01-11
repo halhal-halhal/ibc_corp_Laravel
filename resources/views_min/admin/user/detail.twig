@@ -36,7 +36,7 @@
             <div class=panel-body>
               <h2>ユーザー詳細</h2><hr>
               <p>
-                <a href="/admin/user/{{account_data['user_id']}}/"><img src={% if(user_data.user_image != "no_image.png") %}'/uploads/profile/{{user_data.user_image}}'{% else %}{{ asset('img/ibc_logo.png') }}{% endif %} width=100 alt></a>
+                <a href="/admin/user/{{account_data['user_id']}}/"><img src={% if(account_data.user_image != "no_image.png") %}'/uploads/profile/{{account_data.user_image}}'{% else %}{{ asset('img/ibc_logo.png') }}{% endif %} width=100 alt></a>
               </p>
               <p>ID:
                 {{account_data["user_id"]}}
@@ -63,7 +63,7 @@
                 {{account_data["created_at"]}}
               </p>
               <br>
-              <a href="/admin/user/delete/{{account_data['user_id']}}"><font color="red">削除</font></a>
+              <a href="/admin/user/edit/{{account_data['user_id']}}">編集</a> / <a href="/admin/user/delete/{{account_data['user_id']}}"><font color="red">削除</font></a>
             </div>
           </div>
         </div>
