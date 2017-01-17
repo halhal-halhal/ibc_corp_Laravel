@@ -42,7 +42,8 @@ return [
         // addtitional
         TwigBridge\ServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
-        Laravel\Socialite\SocialiteServiceProvider::class,],
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider,],
 
     "aliases" => [
         "App"       => Illuminate\Support\Facades\App::class,
@@ -77,4 +78,5 @@ return [
         "View"      => Illuminate\Support\Facades\View::class,
         // additional
         "Debugbar"  => Barryvdh\Debugbar\Facade::class,
-        "Socialite" => Laravel\Socialite\Facades\Socialite::class,],];
+        "Socialite" => Laravel\Socialite\Facades\Socialite::class,
+        "Socialite" => Laravel\Socialite\Facades\Socialite,],];
